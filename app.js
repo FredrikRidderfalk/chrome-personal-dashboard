@@ -53,8 +53,16 @@ navigator.geolocation.getCurrentPosition((position) => {
       document.getElementById("weather").innerHTML = `
                 <img src=${iconUrl} />
                 <p class="weather-temp">${Math.round(data.main.temp)}º</p>
-                <p class="weather-city">${data.name}</p>
             `;
+      if (data.name === "Lunna") {
+        document.getElementById("weather").innerHTML += `
+        <p class="weather-city">Kungsbacka</p>
+    `;
+      } else {
+        document.getElementById("weather").innerHTML += `
+          <p class="weather-city">${data.name}</p>
+      `;
+      }
     })
     .catch((err) => console.error(err));
 });
