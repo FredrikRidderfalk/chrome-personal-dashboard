@@ -35,4 +35,18 @@ div.top {
 
 h1.time {
   text-align: center;
+  font-size: 50px;
+}
+
+div#crypto {
+  font-size: 1.3rem;
+}
+
+div#crypto-top {
+  display: flex;
+  align-items: center;
+}
+
+div#crypto-top > span {
+  margin-left: 10px;
 }
