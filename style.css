@@ -56,12 +56,6 @@ div#crypto-top > span {
   margin-left: 10px;
 }
 
-/* div#waifu > img {
-  height: 200px;
-  border: 2px solid black;
-  border-radius: 15px;
-} */
-
 div#weather {
   display: flex;
   align-items: center;

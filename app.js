@@ -33,16 +33,6 @@ fetch("https://api.coingecko.com/api/v3/coins/solana")
   })
   .catch((err) => console.error(err));
 
-// waifu fetch
-// fetch("https://api.waifu.pics/sfw/cuddle")
-//   .then((res) => res.json())
-//   .then((data) => {
-//     console.log(data);
-//     document.getElementById("waifu").innerHTML = `
-//     <img src="${data.url}" />
-//     `;
-//   });
-
 const ticker = setInterval(() => {
   const time = new Date().toLocaleTimeString("en-GB");
   document.getElementById("time").textContent = `${time}`;
